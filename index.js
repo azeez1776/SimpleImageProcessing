@@ -1,8 +1,12 @@
 const caman = require('caman').Caman;
 
-caman('./assets/input/lofi.jpg', function(){
-    this.brightness(5);
-    this.render(function(){
-        this.save('./assets/output/a.jpg');
+
+export const gamma = (fileUrl,reservedUrl ) => {
+    caman(fileUrl, function(){
+        this.gamma(4);
+        this.render(function(){
+            this.save(reservedUrl);
+        })
     })
-})
+}
+
