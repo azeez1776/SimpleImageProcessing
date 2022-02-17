@@ -1,12 +1,22 @@
 const caman = require('caman').Caman;
 
-
-export const gamma = (fileUrl,reservedUrl ) => {
+//The fileUrl is the input file, the outputUrl is where the file is going to be kept, and the value is the value for the gamma, it extends from 0 to infinity but the recommended values is from 0 to 5.
+const gamma = (fileUrl,outputUrl, value ) => {
     caman(fileUrl, function(){
-        this.gamma(4);
+        this.gamma(value);
         this.render(function(){
-            this.save(reservedUrl);
+            this.save(outputUrl);
         })
+    })
+};
+
+//The fileUrl is the input file, the outputUrl is where the file is going to be kept, and the value parameter is the value for the brightness, it extends from -100 to +100, value less than 0 wil darken and value greater than zero will brighten the image.
+const brightness = (fileUrl, outputUrl, value) => {
+    caman(fileUrl, function(){
+        this.brightness(value);
+            this.render(function(){
+                this.save(outputUrl)
+            })
     })
 }
 
