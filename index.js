@@ -38,3 +38,31 @@ const greyscale = (fileUrl, outputUrl) => {
         })
     })
 };
+
+
+const vibrance = (fileUrl, outputUrl, value) => {
+    caman(fileUrl, function () {
+        this.vibrance(value);
+        this.render(function () {
+            this.save(outputUrl)
+        })
+    })
+}
+
+const sepia = (fileUrl, outputUrl, value) => {
+    caman(fileUrl, function(){
+        this.sepia(value);
+        this.render(function(){
+            this.save(outputUrl)
+        })
+    })
+}
+
+module.exports = {
+    gamma,
+    brightness,
+    greyscale,
+    contrast,
+    sepia,
+    vibrance
+};
