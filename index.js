@@ -18,5 +18,23 @@ const brightness = (fileUrl, outputUrl, value) => {
                 this.save(outputUrl)
             })
     })
-}
+};
 
+//The fileUrl is the input file, the outputUrl is where the file is going to be kept, and the value parameter is the value for the contrast, it extends from -100 to +100, value less than 0 wil decrease contrast and value greater than zero will increase contrast of the image, the recommended values are from 5 to 10.
+const contrast = (fileUrl, outputUrl, value) => {
+    caman(fileUrl, function(){
+        this.contrast(value);
+        this.render(function(){
+            this.save(outputUrl)
+        })
+    })
+};
+
+const greyscale = (fileUrl, outputUrl) => {
+    caman(fileUrl, function(){
+        this.greyscale();
+        this.render(function(){
+            this.save(outputUrl)
+        })
+    })
+};
