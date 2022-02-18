@@ -85,6 +85,15 @@ const invert = (fileUrl, outputUrl, value) => {
     })
 };
 
+const noise = (fileUrl, outputUrl, value) => {
+    caman(fileUrl, function () {
+        this.noise(value);
+        this.render(function () {
+            this.save(outputUrl)
+        })
+    })
+} ;
+
 module.exports = {
     gamma,
     brightness,
@@ -94,5 +103,6 @@ module.exports = {
     vibrance,
     saturation,
     hue,
-    invert
+    invert,
+    noise
 };
