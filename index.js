@@ -65,7 +65,15 @@ const saturation = (fileUrl, outputUrl, value) => {
             this.save(outputUrl)
         })
     })
-}
+};
+
+const hue = (fileUrl, outputUrl, value) => {
+    caman(fileUrl, function(){})
+    this.hue(value);
+    this.render(function () {
+        this.save(outputUrl)
+    })
+};
 
 module.exports = {
     gamma,
@@ -73,5 +81,6 @@ module.exports = {
     greyscale,
     contrast,
     sepia,
-    vibrance
+    vibrance,
+    saturation
 };
