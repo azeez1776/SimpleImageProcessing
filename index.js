@@ -75,6 +75,16 @@ const hue = (fileUrl, outputUrl, value) => {
     })
 };
 
+const invert = (fileUrl, outputUrl, value) => {
+    caman(fileUrl, function () {
+        this.invert();
+        this.render(function () {
+            this.save();
+        })
+
+    })
+}
+
 module.exports = {
     gamma,
     brightness,
