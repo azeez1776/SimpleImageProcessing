@@ -94,6 +94,15 @@ const noise = (fileUrl, outputUrl, value) => {
     })
 } ;
 
+const fillColor = (fileUrl, outputUrl, value) => {
+    caman(fileUrl, function () {
+        this.fillColor(value);
+        this.render(function () {
+            this.save(outputUrl)
+        })
+    })
+};
+
 module.exports = {
     gamma,
     brightness,
@@ -104,5 +113,6 @@ module.exports = {
     saturation,
     hue,
     invert,
-    noise
+    noise,
+    fillColor
 };
