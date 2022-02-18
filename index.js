@@ -58,6 +58,15 @@ const sepia = (fileUrl, outputUrl, value) => {
     })
 }
 
+const saturation = (fileUrl, outputUrl, value) => {
+    caman(fileUrl, function(){
+        this.saturation(value);
+        this.render(function(){
+            this.save(outputUrl)
+        })
+    })
+}
+
 module.exports = {
     gamma,
     brightness,
