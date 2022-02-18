@@ -83,7 +83,7 @@ const invert = (fileUrl, outputUrl, value) => {
         })
 
     })
-}
+};
 
 module.exports = {
     gamma,
@@ -92,5 +92,7 @@ module.exports = {
     contrast,
     sepia,
     vibrance,
-    saturation
+    saturation,
+    hue,
+    invert
 };
