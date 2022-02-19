@@ -1,5 +1,5 @@
 {
-  "name": "simp",
+  "name": "simpro",
   "version": "1.0.0",
   "description": "Simple Image Processing Library, built on top of CamanJS, made it simpler",
   "main": "index.js",
