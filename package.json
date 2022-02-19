@@ -1,5 +1,5 @@
 {
-  "name": "ImageProcessing",
+  "name": "simp",
   "version": "1.0.0",
   "description": "Image processing with camanJS Trying Image Processing with CamanJS, CamanJS is a javascript library for Image Processing.",
   "main": "index.js",
