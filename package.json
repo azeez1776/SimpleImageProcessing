@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azeez1776/ImageProcessing.git"
+    "url": "git+https://github.com/azeez1776/SimpleImageProcessing.git"
   },
   "keywords": [],
   "author": "Abdulaziz(Samatar) Abdi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/azeez1776/ImageProcessing/issues"
+    "url": "https://github.com/azeez1776/SimpleImageProcessing/issues"
   },
-  "homepage": "https://github.com/azeez1776/ImageProcessing#readme",
+  "homepage": "https://github.com/azeez1776/SimpleImageProcessing#readme",
   "jest": {
     "verbose": true,
     "testURL": "http://localhost/",
