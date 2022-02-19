@@ -68,18 +68,21 @@ const saturation = (fileUrl, outputUrl, value) => {
 };
 
 const hue = (fileUrl, outputUrl, value) => {
-    caman(fileUrl, function(){})
-    this.hue(value);
-    this.render(function () {
-        this.save(outputUrl)
+    caman(fileUrl, function(){
+        this.hue(value);
+        this.render(function () {
+            this.save(outputUrl)
+    })
+
+
     })
 };
 
-const invert = (fileUrl, outputUrl, value) => {
+const invert = (fileUrl, outputUrl) => {
     caman(fileUrl, function () {
         this.invert();
         this.render(function () {
-            this.save();
+            this.save(outputUrl);
         })
 
     })

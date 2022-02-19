@@ -1,16 +1,39 @@
 {
   "name": "ImageProcessing",
   "version": "1.0.0",
-  "description": "",
+  "description": "Image processing with camanJS Trying Image Processing with CamanJS, CamanJS is a javascript library for Image Processing.",
   "main": "index.js",
+  "dependencies": {
+    "caman": "^4.1.2",
+    "canvas": "^2.9.0"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azeez1776/ImageProcessing.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "caman": "git+https://gitlab.com/modernframe/caman.git",
-    "canvas": "^2.8.0"
+  "bugs": {
+    "url": "https://github.com/azeez1776/ImageProcessing/issues"
+  },
+  "homepage": "https://github.com/azeez1776/ImageProcessing#readme",
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ],
+    "testPathIgnorePatterns": [
+      "dist/"
+    ],
+    "restoreMocks": true
   }
 }
