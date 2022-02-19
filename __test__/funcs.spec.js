@@ -9,3 +9,7 @@ const { gamma,
     invert,
     noise,
     fillColor} = require('../index');
+
+describe("testing the simp functions", () => {
+    test("testing if are all functions")
+})
