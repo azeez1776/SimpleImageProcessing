@@ -1,7 +1,7 @@
 {
   "name": "simp",
   "version": "1.0.0",
-  "description": "Image processing with camanJS Trying Image Processing with CamanJS, CamanJS is a javascript library for Image Processing.",
+  "description": "Simple Image Processing Library, built on top of CamanJS, made it simpler",
   "main": "index.js",
   "dependencies": {
     "caman": "^4.1.2",
