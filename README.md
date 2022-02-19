@@ -16,4 +16,4 @@ greyscale(fileLocationURL, outputFileToBeSavedTo);
 gamma(fileLocationURL, outputFileToBeSavedTo, value);
 
 ```
-There are many other functions, but all us the same format as the two above functions.
+There are many other functions, but all use the same format as the two above functions.
