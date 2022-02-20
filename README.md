@@ -39,4 +39,4 @@ invert(fileLocationURL, outputFileToBeSavedTo);
 noise(fileLocationURL, outputFileToBeSavedTo, value);
 fillColor(fileLocationURL, outputFileToBeSavedTo, value);
 ```
-Where the fileLocation is the path of the image to be processed, the outputFileToBeSaveTo is the directory path for the image to be saved after it's processing, and the value is the intensity of the functions doing the image processing.
+Where the **fileLocation** is the path of the image to be processed, the **outputFileToBeSaveTo** is the directory path for the image to be saved after it's processing, and the **value** is the intensity of the functions doing the image processing.
