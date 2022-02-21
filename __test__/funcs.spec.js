@@ -19,5 +19,9 @@ describe("testing the simp functions", () => {
 
     test("testing for brightness function", ()=>{
         expect(brightness('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
-    })
+    });
+
+    test("testing for greyscale function", () => {
+        expect(greyscale('../assets/input/aloha.jpg', '../assets/output/gamma.jpg')).toBeDefined()
+    });
 })
