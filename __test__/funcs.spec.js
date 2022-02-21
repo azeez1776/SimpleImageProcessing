@@ -14,10 +14,10 @@ const { gamma,
 describe("testing the simp functions", () => {
 
     test("testing for gamma function", ()=>{
-        expect(isFunction(gamma('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6))).toBeTruthy()
+        expect(gamma('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
     });
 
     test("testing for brightness function", ()=>{
-        expect(isFunction(brightness())).toBe(true)
+        expect(brightness('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
     })
 })
