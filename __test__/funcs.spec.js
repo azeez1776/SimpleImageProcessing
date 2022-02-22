@@ -32,5 +32,11 @@ describe("testing the simp functions", () => {
     test("testing for sepia function", ()=> {
         expect(sepia('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
     });
-    
+
+    test("testing for vibrance function", () => {
+        expect(vibrance('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
+    });
+
+    test()
+
 })
