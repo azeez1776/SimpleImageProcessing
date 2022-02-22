@@ -45,4 +45,10 @@ describe("testing the simp functions", () => {
         expect(hue('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
     });
 
+    test("testing the greyscale function", () => {
+        expect(invert('../assets/input/aloha.jpg', '../assets/output/gamma.jpg')).toBeDefined()
+    });
+
+    
+
 })
