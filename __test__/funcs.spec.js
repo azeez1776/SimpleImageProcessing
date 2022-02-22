@@ -24,4 +24,13 @@ describe("testing the simp functions", () => {
     test("testing for greyscale function", () => {
         expect(greyscale('../assets/input/aloha.jpg', '../assets/output/gamma.jpg')).toBeDefined()
     });
+
+    test("testing for contrast function", () => {
+        expect(contrast('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
+    });
+
+    test("testing for sepia function", ()=> {
+        expect(sepia('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
+    });
+    
 })
