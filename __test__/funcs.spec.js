@@ -45,10 +45,14 @@ describe("testing the simp functions", () => {
         expect(hue('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
     });
 
-    test("testing the greyscale function", () => {
+    test("testing the invert function", () => {
         expect(invert('../assets/input/aloha.jpg', '../assets/output/gamma.jpg')).toBeDefined()
     });
 
-    
+    test("testing the noise function", () => {
+        expect(noise('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
+    });
+
+
 
 })
