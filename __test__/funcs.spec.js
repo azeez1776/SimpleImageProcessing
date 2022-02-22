@@ -39,6 +39,10 @@ describe("testing the simp functions", () => {
 
     test("testing for saturation function", () => {
         expect(saturation('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
-    })
+    });
+
+    test("testing for hue function", () => {
+        expect(hue('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
+    });
 
 })
