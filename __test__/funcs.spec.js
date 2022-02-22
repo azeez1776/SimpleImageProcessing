@@ -53,6 +53,10 @@ describe("testing the simp functions", () => {
         expect(noise('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
     });
 
+    test("testing for the fillColor function", () => {
+        expect(fillColor('../assets/input/aloha.jpg', '../assets/output/gamma.jpg',6)).toBeDefined()
+    });
+
 
 
 })
