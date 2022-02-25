@@ -4,7 +4,7 @@
   "description": "Simple Image Processing Library, built on top of CamanJS, made it simpler",
   "main": "index.js",
   "dependencies": {
-    "caman": "^4.1.2",
+    "caman": "git+https://gitlab.com/modernframe/caman.git",
     "canvas": "^2.9.0"
   },
   "devDependencies": {
