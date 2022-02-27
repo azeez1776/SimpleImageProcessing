@@ -30,6 +30,7 @@ const contrast = (fileUrl, outputUrl, value) => {
     })
 };
 
+//Converts the image to greyscale
 const greyscale = (fileUrl, outputUrl) => {
     caman(fileUrl, function(){
         this.greyscale();
@@ -39,7 +40,7 @@ const greyscale = (fileUrl, outputUrl) => {
     })
 };
 
-
+//Similar to saturation, but adjusts the saturation levels in a slightly smarter, more subtle way. Vibrance will boost colors that are less saturated more and boost already saturated colors less, while saturation boosts all colors by the same level. Range is -100 to 100.
 const vibrance = (fileUrl, outputUrl, value) => {
     caman(fileUrl, function () {
         this.vibrance(value);
@@ -49,6 +50,7 @@ const vibrance = (fileUrl, outputUrl, value) => {
     })
 }
 
+//Applies an adjustable sepia effect to the image. Range is from 0 to 100. The larger the value, the stronger the sepia effect.
 const sepia = (fileUrl, outputUrl, value) => {
     caman(fileUrl, function(){
         this.sepia(value);
@@ -58,6 +60,7 @@ const sepia = (fileUrl, outputUrl, value) => {
     })
 }
 
+//Adjusts the color saturation of the image. If you want to completely desaturate the image, using the greyscale filter is highly recommended because it will yield better results. Range is -100 to 100.
 const saturation = (fileUrl, outputUrl, value) => {
     caman(fileUrl, function(){
         this.saturation(value);
@@ -67,6 +70,7 @@ const saturation = (fileUrl, outputUrl, value) => {
     })
 };
 
+//Adjust the hue of an image, value can range from 0 to 100
 const hue = (fileUrl, outputUrl, value) => {
     caman(fileUrl, function(){
         this.hue(value);
@@ -78,6 +82,7 @@ const hue = (fileUrl, outputUrl, value) => {
     })
 };
 
+//Inverts all colors in the image by subtracting each color channel value from 255.
 const invert = (fileUrl, outputUrl) => {
     caman(fileUrl, function () {
         this.invert();
@@ -88,6 +93,7 @@ const invert = (fileUrl, outputUrl) => {
     })
 };
 
+//Applies an adjustable amount of noise to the image.
 const noise = (fileUrl, outputUrl, value) => {
     caman(fileUrl, function () {
         this.noise(value);
@@ -97,6 +103,7 @@ const noise = (fileUrl, outputUrl, value) => {
     })
 } ;
 
+//Fills the canvas with a single solid color. Useful when used with layers. Can take either separate R, G, and B values as arguments, or a single hex color value.
 const fillColor = (fileUrl, outputUrl, value) => {
     caman(fileUrl, function () {
         this.fillColor(value);
