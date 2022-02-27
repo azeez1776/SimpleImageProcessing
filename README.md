@@ -60,4 +60,4 @@ noise(fileLocationURL, outputFileToBeSavedTo, value);
 //Fills the canvas with a single solid color. Useful when used with layers. Can take either separate R, G, and B values as arguments, or a single hex color value.
 fillColor(fileLocationURL, outputFileToBeSavedTo, value);
 ```
-Where the **fileLocationURL** is the path of the image to be processed, the **outputFileToBeSaveTo** is the directory path for the image to be saved after it's processing, and the **value** is the intensity of the functions doing the image processing.
+Where the **fileLocationURL** is the path of the image to be processed, the **outputFileToBeSaveTo** is the directory path for the image to be saved after it's processing, and the **value** is the intensity of the functions doing the image processing. For more information you can check [simpro introduction in hashnode.](https://samatarabdi.hashnode.dev/simpro#heading-installation)
