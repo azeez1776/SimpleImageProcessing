@@ -10,6 +10,12 @@ Using npm:
 $npm i simpro
 ```
 
+Using Yarn
+
+```shell
+yarn add simpro
+```
+
 ## In Node.js
 
 ```js
